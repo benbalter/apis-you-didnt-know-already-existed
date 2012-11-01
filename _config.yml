@@ -1,0 +1,20 @@
+title: Open Source in Government
+author: Benjamin J. Balter
+Description:
+auto: true
+server: true
+safe: true
+pygments: true
+permalink: none
+prose:
+  rooturl: "_posts"
+  metadata: 
+    "_posts/": |
+      x: 
+      y:
+      z:
+      scale:
+      slide:
+      rotate-x:
+      rotate-y:
+      rotate-z:      

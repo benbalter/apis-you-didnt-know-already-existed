@@ -1,0 +1,9 @@
+---
+layout: default
+---
+{% for page in site.posts %}
+<div id="{{ page.title | downcase | replace:" ","-" }}" class="step{% if page.slide %} slide{% endif%}" data-x="{{ page.x }}" data-y="{{ page.y }}" data-z="{{ page.z }}" scale="{{ page.scale }}" data-rotate-x="{{ page.rotate-x }}" data-rotate-y="{{ page.rotate-y }}" data-rotate-z="{{ page.rotate-z }}">
+{{ page.content }}
+{% if page.notes %}{% for note in page.notes %}<div class="notes">{{ note }}</div>{% endfor %}{% endif %}
+</div>
+{% endfor %}
